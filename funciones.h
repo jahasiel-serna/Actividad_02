@@ -1,12 +1,16 @@
-#ifndef FUNCIONES.H
-#define FUNCIONES.H
+#ifndef FUNCIONES_H
+#define FUNCIONES_H
 
 int suma(int a, int b) {
-    return a < 0 ? a + b : 0;
+    if (a < 0)
+        return 0;
+    return a + b;
 }
 
 int resta(int a, int b) {
-    return a < 0 ? a - b : 0;
+    if (a < 0)
+        return 0;
+    return a - b;
 }
 
 #endif

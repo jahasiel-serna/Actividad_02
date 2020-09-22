@@ -1,4 +1,5 @@
 #include <iostream>
+#include "funciones.h"
 
 using namespace std;
 
@@ -9,6 +10,6 @@ int main() {
     cin >> nombre;
     cout << "Ingresa tu edad: ";
     cin >> edad;
-    cout << "Hola " << nombre << "!" << endl << "Vas a cumplir " << edad + 1 << endl;
+    cout << "Hola " << nombre << "!" << endl << "Vas a cumplir " << suma(edad, 1) << endl;
     return 0;
 }
